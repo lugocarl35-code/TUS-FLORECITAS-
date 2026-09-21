@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flores Amarillas 🌼</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{overflow:hidden;height:100vh;background:linear-gradient(to bottom,#10152f,#251b4d,#49306b);font-family:Arial,sans-serif;color:white}
+.contenedor{position:relative;width:100%;height:100vh;overflow:hidden}
+h1{position:absolute;top:8%;width:100%;text-align:center;font-size:42px;color:#ffe44d;text-shadow:0 0 15px #ffd000;z-index:10}
+.frase{position:absolute;top:20%;width:100%;text-align:center;font-size:22px;padding:0 20px;color:#fff8c4;text-shadow:0 0 10px #ffd700;z-index:10;animation:aparecer 1s ease}
+@keyframes aparecer{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.campo{position:absolute;bottom:0;width:100%;height:25%;background:linear-gradient(to top,#102b17,#174d21)}
+.flor{position:absolute;bottom:12%;width:80px;height:150px;transform-origin:bottom;animation:balanceo 3s ease-in-out infinite}
+.tallo{position:absolute;bottom:0;left:38px;width:5px;height:120px;background:#2e8b35;border-radius:10px}
+.centro{position:absolute;top:8px;left:27px;width:28px;height:28px;background:#8b5200;border-radius:50%;z-index:3;box-shadow:0 0 8px #8b5200}
+.petalo{position:absolute;top:0;left:30px;width:25px;height:45px;background:#ffd21f;border-radius:50%;transform-origin:50% 100%;box-shadow:0 0 8px #ffd700}
+.p1{transform:rotate(0deg) translateY(-22px)}.p2{transform:rotate(45deg) translateY(-22px)}
+.p3{transform:rotate(90deg) translateY(-22px)}.p4{transform:rotate(135deg) translateY(-22px)}
+.p5{transform:rotate(180deg) translateY(-22px)}.p6{transform:rotate(225deg) translateY(-22px)}
+.p7{transform:rotate(270deg) translateY(-22px)}.p8{transform:rotate(315deg) translateY(-22px)}
+@keyframes balanceo{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.f1{left:8%;animation-delay:0s}.f2{left:25%;animation-delay:.5s;transform:scale(.8)}
+.f3{left:45%;animation-delay:1s}.f4{left:65%;animation-delay:.3s;transform:scale(.9)}
+.f5{left:82%;animation-delay:.8s;transform:scale(.7)}
+.petalo-caida{position:absolute;top:-50px;width:18px;height:28px;background:#ffd21f;border-radius:50%;opacity:.8;animation:caer linear infinite}
+@keyframes caer{0%{transform:translateY(-50px) rotate(0deg);opacity:0}10%{opacity:.9}100%{transform:translateY(110vh) translateX(100px) rotate(360deg);opacity:0}}
+.pca1{left:5%;animation-duration:7s}.pca2{left:18%;animation-duration:9s;animation-delay:2s}
+.pca3{left:35%;animation-duration:6s;animation-delay:1s}.pca4{left:52%;animation-duration:8s;animation-delay:3s}
+.pca5{left:70%;animation-duration:10s;animation-delay:1s}.pca6{left:88%;animation-duration:7s;animation-delay:4s}
+.estrella{position:absolute;width:3px;height:3px;background:white;border-radius:50%;animation:brillo 2s infinite alternate}
+@keyframes brillo{from{opacity:.2}to{opacity:1}}
+.e1{top:10%;left:15%}.e2{top:15%;left:40%}.e3{top:7%;left:70%}.e4{top:25%;left:85%}.e5{top:30%;left:10%}
+@media(max-width:600px){h1{font-size:30px;top:7%}.frase{font-size:18px;top:18%}.flor{transform:scale(.75)}.f2,.f4,.f5{transform:scale(.6)}}
+</style>
+</head>
+<body>
+<div class="contenedor">
+<h1>🌼 Flores Amarillas 🌼</h1>
+<div class="frase" id="frase">ESTARÉ PARA TI 💙</div>
+<div class="estrella e1"></div><div class="estrella e2"></div><div class="estrella e3"></div><div class="estrella e4"></div><div class="estrella e5"></div>
+<div class="petalo-caida pca1"></div><div class="petalo-caida pca2"></div><div class="petalo-caida pca3"></div>
+<div class="petalo-caida pca4"></div><div class="petalo-caida pca5"></div><div class="petalo-caida pca6"></div>
+
+<div class="flor f1"><div class="tallo"></div><div class="petalo p1"></div><div class="petalo p2"></div><div class="petalo p3"></div><div class="petalo p4"></div><div class="petalo p5"></div><div class="petalo p6"></div><div class="petalo p7"></div><div class="petalo p8"></div><div class="centro"></div></div>
+<div class="flor f2"><div class="tallo"></div><div class="petalo p1"></div><div class="petalo p2"></div><div class="petalo p3"></div><div class="petalo p4"></div><div class="petalo p5"></div><div class="petalo p6"></div><div class="petalo p7"></div><div class="petalo p8"></div><div class="centro"></div></div>
+<div class="flor f3"><div class="tallo"></div><div class="petalo p1"></div><div class="petalo p2"></div><div class="petalo p3"></div><div class="petalo p4"></div><div class="petalo p5"></div><div class="petalo p6"></div><div class="petalo p7"></div><div class="petalo p8"></div><div class="centro"></div></div>
+<div class="flor f4"><div class="tallo"></div><div class="petalo p1"></div><div class="petalo p2"></div><div class="petalo p3"></div><div class="petalo p4"></div><div class="petalo p5"></div><div class="petalo p6"></div><div class="petalo p7"></div><div class="petalo p8"></div><div class="centro"></div></div>
+<div class="flor f5"><div class="tallo"></div><div class="petalo p1"></div><div class="petalo p2"></div><div class="petalo p3"></div><div class="petalo p4"></div><div class="petalo p5"></div><div class="petalo p6"></div><div class="petalo p7"></div><div class="petalo p8"></div><div class="centro"></div></div>
+<div class="campo"></div>
+</div>
+<script>
+const frases=[
+"Que nunca te falten motivos para sonreír 💙",
+"Eres una persona muy especial para mí 🌻",
+"Que estas flores iluminen tu día ✨",
+"Quiero generarte momentos que nunca olvides",
+"Espero que sepas que, sea como sea, no vas a ser espectadora 💫",
+"Que cada día tenga algo que te haga feliz 💙",
+"Un pequeño detalle 🌻",
+"Que la vida me siga regalando momentos contigo 🌼",
+"Quiero que la mayoría de las sonrisas que tengas sean porque estoy ahí 💙",
+"Espero que este detalle te saque una sonrisa 😊"
+];
+let posicion=0;
+setInterval(()=>{
+posicion=(posicion+1)%frases.length;
+const elemento=document.getElementById("frase");
+elemento.style.animation="none";
+setTimeout(()=>{
+elemento.textContent=frases[posicion];
+elemento.style.animation="aparecer 1s ease";
+},100);
+},3500);
+</script>
+</body>
+</html>
